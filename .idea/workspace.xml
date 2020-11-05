@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -50,6 +57,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1604579595562" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1604580058763">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1604580058763" />
+    <state x="976" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1604580129563">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="976" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1604580129563" />
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604579587348">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
