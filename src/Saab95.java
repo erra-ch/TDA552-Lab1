@@ -1,5 +1,5 @@
 import java.awt.*;
-heeeeeeehaaaaaaaaaaaaaw
+
 public class Saab95{
 
     public boolean turboOn;
