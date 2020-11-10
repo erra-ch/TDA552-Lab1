@@ -10,26 +10,12 @@ public class Volvo240 extends AbstractCar{
     }
     
 
-    //TODO
-    public double speedFactor(){
-        return enginePower * 0.01 * trimFactor;
-    }
 
-    public void incrementSpeed(double amount){
-	    currentSpeed = Math.min(getCurrentSpeed() + speedFactor() * amount,enginePower);
-    }
-
-    public void decrementSpeed(double amount){
-        currentSpeed = Math.max(getCurrentSpeed() - speedFactor() * amount,0);
+    protected double speedFactor(){
+        return this.getEnginePower() * 0.01 * trimFactor;
     }
 
 
-    public void gas(double amount){
-        incrementSpeed(amount);
-    }
+    public static double getTrimFactor() { return trimFactor;}
 
-
-    public void brake(double amount){
-        decrementSpeed(amount);
-    }
 }

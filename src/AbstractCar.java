@@ -27,6 +27,24 @@ public abstract class AbstractCar {
         stopEngine();
     }
 
+    private void incrementSpeed(double amount) {
+        this.setCurrentSpeed(Math.min(this.getCurrentSpeed() + this.speedFactor() * amount, this.getEnginePower())); // Math.min to not get above max speed
+    }
+
+    private void decrementSpeed(double amount) {
+        this.setCurrentSpeed(Math.max(this.getCurrentSpeed() - this.speedFactor() * amount, 0)); // Math.max to not get negative speed
+    }
+
+    protected abstract double speedFactor();
+
+    public void gas(double amount) {
+        this.incrementSpeed(amount);
+    }
+
+    public void brake(double amount) {
+        this.decrementSpeed(amount);
+    }
+
     public int getNrDoors() {
         return nrDoors;
     }
