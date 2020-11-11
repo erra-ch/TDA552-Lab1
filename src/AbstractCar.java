@@ -1,6 +1,6 @@
 import java.awt.*;
-
-public abstract class AbstractCar {
+//TODO Comments
+public abstract class AbstractCar implements Movable {
 
     private int nrDoors;
 
@@ -11,6 +11,15 @@ public abstract class AbstractCar {
     private Color color;
 
     private String modelName;
+
+    private double x;
+
+    private double y;
+
+    private int direction;  // 0 = UP
+                            // 1 = Right
+                            // 2 = Down
+                            // 3 = Left
 
     /**
      *
@@ -24,6 +33,9 @@ public abstract class AbstractCar {
         this.enginePower = enginePower;
         this.color = color;
         this.modelName = modelName;
+        this.x = 0;
+        this.y = 0;
+        this.direction = 0;
         stopEngine();
     }
 
@@ -37,12 +49,48 @@ public abstract class AbstractCar {
 
     protected abstract double speedFactor();
 
+    //TODO Gas and Brake
     public void gas(double amount) {
         this.incrementSpeed(amount);
     }
 
     public void brake(double amount) {
         this.decrementSpeed(amount);
+    }
+
+
+    @Override
+    public void move() {
+        switch (this.direction) {
+            case 0:
+                this.setY(this.getY() - this.getCurrentSpeed());    // Up - negative Y
+                break;
+            case 1:
+                this.setX(this.getX() + this.getCurrentSpeed());    // Right - positive X
+                break;
+            case 2:
+                this.setY(this.getY() + this.getCurrentSpeed());    // Down - positive Y
+                break;
+            case 3:
+                this.setX(this.getX() - this.getCurrentSpeed());    // Left - negative X
+                break;
+            default:
+                throw new IllegalArgumentException("Incorrect direction...");
+        }
+    }
+
+    @Override
+    public void turfLeft() {
+        this.setDirection((this.getDirection() + 3) % 4);  // Modulo-4 counter
+    }
+
+    @Override
+    public void turnRight() {
+        this.setDirection((this.getDirection() + 1) % 4);
+    }
+
+    public void stopEngine() {
+        currentSpeed = 0;
     }
 
     public int getNrDoors() {
@@ -77,7 +125,27 @@ public abstract class AbstractCar {
         return modelName;
     }
 
-    public void stopEngine() {
-        currentSpeed = 0;
+    public double getX() {
+        return x;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public int getDirection() {
+        return direction;
+    }
+
+    public void setDirection(int direction) {
+        this.direction = direction;
     }
 }

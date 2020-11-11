@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afba137-3cf7-42fa-9410-4df26d93d5db" name="Default Changelist" comment="Task 1: Created AbscractCar class. Changed constructors to super (inheritance). Getters and Setters in AbstractCar&#10;&#10;TODO: Implement increment- and decrementSpeed, gas and brake in AbstractCar">
+      <change afterPath="$PROJECT_DIR$/src/Movable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AbstractCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saab95.java" afterDir="false" />
@@ -15,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -114,10 +115,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="358" key="#Notifications/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1604582626171" />
-    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1604589998555">
+    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1605102212585">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1604589998555" />
+    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605102212585" />
     <state x="311" y="252" key="CommitChangelistDialog2" timestamp="1604912860603">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
