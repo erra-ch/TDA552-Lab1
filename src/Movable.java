@@ -1,10 +1,22 @@
-//TODO Comments
-public interface Movable{
 
+
+/**
+ * Interface for movable objects
+ */
+public interface Movable{
+    /**
+     * Move method
+     */
     void move();
 
-    void turfLeft();
+    /**
+     * Method to turn left
+     */
+    void turnLeft();
 
+    /**
+     * Method to turn right
+     */
     void turnRight();
 
 }
