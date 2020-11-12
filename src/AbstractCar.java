@@ -80,15 +80,19 @@ public abstract class AbstractCar implements Movable {
 
     protected abstract double speedFactor();
 
-    //TODO Gas and Brake
-
     /**
      * Increases the speed of the car
      *
      * @param amount Amount of speed
      */
     public void gas(double amount) {
-        this.incrementSpeed(amount);
+        if (amount > 1) {
+            this.incrementSpeed(1);
+        } else if (amount <= 0) {
+            this.incrementSpeed(0);
+        } else {
+            this.incrementSpeed(amount);
+        }
     }
 
     /**
@@ -97,7 +101,14 @@ public abstract class AbstractCar implements Movable {
      * @param amount Amount of speed
      */
     public void brake(double amount) {
-        this.decrementSpeed(amount);
+        if (amount > 1) {
+            this.decrementSpeed(1);
+        } else if (amount <= 0) {
+            this.decrementSpeed(0);
+        } else {
+            this.decrementSpeed(amount);
+        }
+
     }
 
     /**
@@ -192,9 +203,7 @@ public abstract class AbstractCar implements Movable {
      *
      * @param currentSpeed The speed to set the current speed to
      */
-    public void setCurrentSpeed(double currentSpeed) {
-        this.currentSpeed = currentSpeed;
-    }
+    public void setCurrentSpeed(double currentSpeed) { this.currentSpeed = currentSpeed; }
 
     /**
      * Setter for color

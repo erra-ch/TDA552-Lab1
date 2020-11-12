@@ -68,4 +68,16 @@ public class Saab95Test {
         car.turnLeft();
         Assert.assertSame(1, car.getDirection());
     }
+
+    /**
+     * Gas and brake test method
+     */
+    @Test
+    public void GasBrakeTest() {
+        AbstractCar car = new Saab95();
+        car.gas(0.5);
+        car.gas(0.2);
+        car.brake(0.3);
+        Assert.assertEquals(0.5, car.getCurrentSpeed(), 0.5);
+    }
 }
