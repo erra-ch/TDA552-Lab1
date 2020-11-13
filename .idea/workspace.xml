@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/Test/Saab95Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Saab95Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Volvo240Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Volvo240Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AbstractCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saab95.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="499" />
+    <option name="myElementSize" value="561" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,11 +61,22 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestSuite">
-    <configuration name="MoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Saab95Test.TestBrakeSanity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552-Lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MoveTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Saab95Test" />
+      <option name="METHOD_NAME" value="TestBrakeSanity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Saab95Test.TestGasBrakeSanity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDA552-Lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Saab95Test" />
+      <option name="METHOD_NAME" value="TestGasBrakeSanity" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -78,11 +90,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TurnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Volvo240Test.TestGasBrakeSanity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552-Lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TurnTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Volvo240Test" />
+      <option name="METHOD_NAME" value="TestGasBrakeSanity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Volvo240Test.TestStopEngine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDA552-Lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Volvo240Test" />
+      <option name="METHOD_NAME" value="TestStopEngine" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,8 +113,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestSuite" />
-        <item itemvalue="JUnit.MoveTest" />
-        <item itemvalue="JUnit.TurnTest" />
+        <item itemvalue="JUnit.Saab95Test.TestBrakeSanity" />
+        <item itemvalue="JUnit.Saab95Test.TestGasBrakeSanity" />
+        <item itemvalue="JUnit.Volvo240Test.TestGasBrakeSanity" />
+        <item itemvalue="JUnit.Volvo240Test.TestStopEngine" />
       </list>
     </recent_temporary>
   </component>
@@ -160,18 +185,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="358" key="#Project_Structure/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605186346013" />
-    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1605102212585">
+    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1605259003702">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605102212585" />
+    <state x="1085" y="400" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605259003702" />
     <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605184668513">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605184668513" />
-    <state x="1027" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605186556147">
+    <state x="1027" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1605259574021">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1027" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605186556147" />
+    <state x="1027" y="423" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605259574021" />
     <state x="311" y="252" key="CommitChangelistDialog2" timestamp="1604912860603">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -184,22 +209,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605185671524" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1605190210972">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1605275181797">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605190210972" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1605190210972">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605275181797" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1605275181796">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605190210972" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1605190210972">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605275181796" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1605275181796">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605190210972" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1605190210972">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605275181796" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1605275181796">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605190210972" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605275181796" />
     <state x="760" y="274" key="SettingsEditor" timestamp="1605185840493">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -208,10 +233,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1604913312036" />
-    <state x="976" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1604581933343">
+    <state x="976" y="523" key="com.intellij.ide.util.TipDialog" timestamp="1605250710142">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="976" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1604581933343" />
+    <state x="976" y="523" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605250710142" />
     <state x="984" y="593" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604579587348">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -223,7 +248,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TDA552_Lab1$MoveTest.ic" NAME="MoveTest Coverage Results" MODIFIED="1605186059650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TDA552_Lab1$TestSuite.ic" NAME="TestSuite Coverage Results" MODIFIED="1605190204420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552_Lab1$TestSuite.ic" NAME="TestSuite Coverage Results" MODIFIED="1605274962037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$TurnTest.ic" NAME="TurnTest Coverage Results" MODIFIED="1605185846541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552_Lab1$Volvo240Test_TestStopEngine.ic" NAME="Volvo240Test.TestStopEngine Coverage Results" MODIFIED="1605273771746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
