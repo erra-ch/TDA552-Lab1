@@ -70,11 +70,42 @@ public class Volvo240Test {
      * Gas and brake test method
      */
     @Test
-    public void GasBrakeTest() {
+    public void TestGasBrake() {
         AbstractCar car = new Volvo240();
         car.gas(0.5);
         car.gas(0.2);
         car.brake(0.3);
         Assert.assertEquals(0.5, car.getCurrentSpeed(), 0.5);
+    }
+
+    /**
+     * Test other cases when using Gas and Brake
+     */
+    @Test
+    public void TestGasBrakeSanity() {
+        AbstractCar car = new Volvo240();
+        car.gas(2);
+        car.gas(-1);
+        Assert.assertEquals(1.25, car.getCurrentSpeed(), 1.25 );
+    }
+
+    /**
+     * Test get Trim Factor
+     */
+    @Test
+    public void TestTrimFactor() {
+        AbstractCar car = new Volvo240();
+        Assert.assertEquals(1.25, ((Volvo240) car).getTrimFactor(), 1.25);
+    }
+
+    /**
+     * Test Stop Engine
+     */
+    @Test
+    public void TestStopEngine() {
+        AbstractCar car = new Volvo240();
+        car.startEngine();
+        car.stopEngine();
+        Assert.assertEquals(0, car.getCurrentSpeed(), 0);
     }
 }

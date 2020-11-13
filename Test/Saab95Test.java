@@ -73,11 +73,59 @@ public class Saab95Test {
      * Gas and brake test method
      */
     @Test
-    public void GasBrakeTest() {
+    public void TestGasBrake() {
         AbstractCar car = new Saab95();
         car.gas(0.5);
         car.gas(0.2);
         car.brake(0.3);
         Assert.assertEquals(0.5, car.getCurrentSpeed(), 0.5);
+    }
+
+    /**
+     * Test other cases when using Gas
+     */
+    @Test
+    public void TestGasSanity() {
+        AbstractCar car = new Saab95();
+        car.gas(2);
+        car.gas(-1);
+        Assert.assertEquals(1.25, car.getCurrentSpeed(), 1.25 );
+    }
+
+    /**
+     * Test other cases when using Brake
+     */
+    @Test
+    public void TestBrakeSanity() {
+        AbstractCar car = new Saab95();
+        car.setCurrentSpeed(1.25);
+        car.brake(2);
+        car.brake(-1);
+        Assert.assertEquals(0, car.getCurrentSpeed(), 0 );
+    }
+
+    /**
+     * Test for turning on Turbo
+     */
+    @Test
+    public void TestTurboOn(){
+        AbstractCar car = new Saab95();
+        car.startEngine();  // Speed = 0.1
+        ((Saab95) car).setTurboOn();    // Speed factor  = 1.625
+        car.gas(1); // Speed = 1.725
+        Assert.assertEquals(1.725, car.getCurrentSpeed(), 1.725 );
+    }
+
+    /**
+     * Test for turning off Turbo
+     */
+    @Test
+    public void TestTurboOff(){
+        AbstractCar car = new Saab95();
+        car.startEngine();  // Speed = 0.1
+        ((Saab95) car).setTurboOn();    // Speed factor = 1.625
+        ((Saab95) car).setTurboOff();   // Speed factor = 1.25
+        car.gas(1);  // Speed = 1.35
+        Assert.assertEquals(1.35, car.getCurrentSpeed(), 1.35 );
     }
 }

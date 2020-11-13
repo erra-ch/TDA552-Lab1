@@ -22,9 +22,7 @@ public class Saab95 extends AbstractCar{
     /**
      * Method that turns turbo on
      */
-    public void setTurboOn(){
-	    turboOn = true;
-    }
+    public void setTurboOn(){ turboOn = true; }
 
     /**
      * Method that turns turbo off

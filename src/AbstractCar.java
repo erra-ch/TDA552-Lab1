@@ -130,7 +130,7 @@ public abstract class AbstractCar implements Movable {
                 this.setX(this.getX() - this.getCurrentSpeed());    // Left - negative X
                 break;
             default:
-                throw new IllegalArgumentException("Incorrect direction...");
+
         }
     }
 
@@ -161,16 +161,16 @@ public abstract class AbstractCar implements Movable {
     public void stopEngine() {
         currentSpeed = 0;
     }
-
+    /*
     /**
      * Getter for number of doors
      *
      * @return Returns number of doors the car has
-     */
+     *  /
     public int getNrDoors() {
         return nrDoors;
     }
-
+    */
     /**
      * Getter for enginepower
      *
@@ -180,14 +180,6 @@ public abstract class AbstractCar implements Movable {
         return enginePower;
     }
 
-    /**
-     * Setter for enginepower
-     *
-     * @param enginePower How much power the engine gets
-     */
-    public void setEnginePower(double enginePower) {
-        this.enginePower = enginePower;
-    }
 
     /**
      * Getter for current speed of the car
@@ -204,34 +196,34 @@ public abstract class AbstractCar implements Movable {
      * @param currentSpeed The speed to set the current speed to
      */
     public void setCurrentSpeed(double currentSpeed) { this.currentSpeed = currentSpeed; }
-
+    /*
     /**
      * Setter for color
      *
      * @return Returns the color of the car
-     */
+     *  /
     public Color getColor() {
         return color;
     }
-
+    */
+    /*
     /**
      * Setter for the color of the car
      *
      * @param color The color to paint the car with
-     */
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
+     *  /
+    public void setColor(Color color) { this.color = color; }
+    */
+    /*
     /**
      * Getter for model of the car
      *
      * @return Returns the model name
-     */
+     *  /
     public String getModelName() {
         return modelName;
     }
-
+    */
     /**
      * Getter for X-position
      *
