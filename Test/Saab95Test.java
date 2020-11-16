@@ -10,7 +10,7 @@ public class Saab95Test {
      */
     @Test
     public void TestMoveWhenDirectionIsUp() {
-        AbstractCar saab95 = new Saab95();
+        Car saab95 = new Saab95();
         saab95.startEngine();
         saab95.move();
         Assert.assertEquals(-0.1, saab95.getY(), -0.1);
@@ -22,7 +22,7 @@ public class Saab95Test {
      */
     @Test
     public void TestMoveWhenDirectionIsRight() {
-        AbstractCar saab95 = new Saab95();
+        Car saab95 = new Saab95();
         saab95.startEngine();
         saab95.turnRight();
         saab95.move();
@@ -35,7 +35,7 @@ public class Saab95Test {
      */
     @Test
     public void TestMoveWhenDirectionIsDown() {
-        AbstractCar saab95 = new Saab95();
+        Car saab95 = new Saab95();
         saab95.startEngine();
         saab95.turnRight();
         saab95.turnRight();
@@ -49,7 +49,7 @@ public class Saab95Test {
      */
     @Test
     public void TestMoveWhenDirectionIsLeft() {
-        AbstractCar saab95 = new Saab95();
+        Car saab95 = new Saab95();
         saab95.startEngine();
         saab95.turnLeft();
         saab95.move();
@@ -62,7 +62,7 @@ public class Saab95Test {
      */
     @Test
     public void TestRightAndLeftTurn() {
-        AbstractCar car = new Saab95();
+        Car car = new Saab95();
         car.turnRight();
         car.turnRight();
         car.turnLeft();
@@ -74,7 +74,7 @@ public class Saab95Test {
      */
     @Test
     public void TestGasBrake() {
-        AbstractCar car = new Saab95();
+        Car car = new Saab95();
         car.gas(0.5);
         car.gas(0.2);
         car.brake(0.3);
@@ -86,7 +86,7 @@ public class Saab95Test {
      */
     @Test
     public void TestGasSanity() {
-        AbstractCar car = new Saab95();
+        Car car = new Saab95();
         car.gas(2);
         car.gas(-1);
         Assert.assertEquals(1.25, car.getCurrentSpeed(), 1.25 );
@@ -97,7 +97,7 @@ public class Saab95Test {
      */
     @Test
     public void TestBrakeSanity() {
-        AbstractCar car = new Saab95();
+        Car car = new Saab95();
         car.setCurrentSpeed(1.25);
         car.brake(2);
         car.brake(-1);
@@ -109,7 +109,7 @@ public class Saab95Test {
      */
     @Test
     public void TestTurboOn(){
-        AbstractCar car = new Saab95();
+        Car car = new Saab95();
         car.startEngine();  // Speed = 0.1
         ((Saab95) car).setTurboOn();    // Speed factor  = 1.625
         car.gas(1); // Speed = 1.725
@@ -121,7 +121,7 @@ public class Saab95Test {
      */
     @Test
     public void TestTurboOff(){
-        AbstractCar car = new Saab95();
+        Car car = new Saab95();
         car.startEngine();  // Speed = 0.1
         ((Saab95) car).setTurboOn();    // Speed factor = 1.625
         ((Saab95) car).setTurboOff();   // Speed factor = 1.25

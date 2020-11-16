@@ -4,7 +4,7 @@ import java.awt.*;
 /**
  * Car model class for Saab 95
  */
-public class Saab95 extends AbstractCar{
+public class Saab95 extends Car {
 
     /**
      * Sets turbo

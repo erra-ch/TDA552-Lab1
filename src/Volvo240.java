@@ -4,7 +4,7 @@ import java.awt.*;
 /**
  * Car model class for Volvo 240
  */
-public class Volvo240 extends AbstractCar{
+public class Volvo240 extends Car {
 
     /**
      * Trim factor for the car
