@@ -41,6 +41,8 @@ public abstract class Vehicle implements Movable {
                             // 2 = Down
                             // 3 = Left
 
+    private boolean isMovable;
+
     /**
      * Constructor for abstract class of vehicle
      *
@@ -57,7 +59,25 @@ public abstract class Vehicle implements Movable {
         this.x = 0;
         this.y = 0;
         this.direction = 0;
+        this.isMovable = true;
         stopEngine();
+    }
+
+    /**
+     * Tells if the vehicle can be moved
+     *
+     * @return boolean
+     */
+    public boolean isMovable() {
+        return isMovable;
+    }
+
+    /**
+     * Sets the state of the vehicles ability to move
+     * @param state boolean
+     */
+    public void setMovableState(boolean state) {
+        isMovable = state;
     }
 
     /**
