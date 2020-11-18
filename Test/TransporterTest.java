@@ -26,9 +26,7 @@ public class TransporterTest {
 
         truck.rampDown();
         truck.rampUp();
-        System.out.println(truck.getTrailer().size());
         truck.loadCar(car);
-        System.out.println(truck.getTrailer().size());
         Assert.assertTrue(truck.getTrailer().size() == 0);
 
     }

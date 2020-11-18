@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afba137-3cf7-42fa-9410-4df26d93d5db" name="Default Changelist" comment="Task 1: Created AbscractCar class. Changed constructors to super (inheritance). Getters and Setters in AbstractCar&#10;&#10;TODO: Implement increment- and decrementSpeed, gas and brake in AbstractCar">
-      <change afterPath="$PROJECT_DIR$/Test/TransporterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CarTransportable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ramp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RampPos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/WorkshopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Workshop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TransporterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TransporterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="286" />
+    <option name="myElementSize" value="523" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,16 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransporterTest.LoadUnloadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TDA552-Lab1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TransporterTest" />
-      <option name="METHOD_NAME" value="LoadUnloadTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TransporterTest.MoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552-Lab1" />
       <option name="PACKAGE_NAME" value="" />
@@ -105,11 +91,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransporterTest.RampTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WorkshopTest.WorkshopAddRemoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552-Lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TransporterTest" />
-      <option name="METHOD_NAME" value="RampTest" />
+      <option name="MAIN_CLASS_NAME" value="WorkshopTest" />
+      <option name="METHOD_NAME" value="WorkshopAddRemoveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkshopTest.WorkshopTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDA552-Lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WorkshopTest" />
+      <option name="METHOD_NAME" value="WorkshopTypeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,10 +114,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestSuite" />
+        <item itemvalue="JUnit.WorkshopTest.WorkshopTypeTest" />
+        <item itemvalue="JUnit.WorkshopTest.WorkshopAddRemoveTest" />
         <item itemvalue="JUnit.TransporterTest.CarIsCloseSanity" />
         <item itemvalue="JUnit.TransporterTest.MoveTest" />
-        <item itemvalue="JUnit.TransporterTest.LoadUnloadTest" />
-        <item itemvalue="JUnit.TransporterTest.RampTest" />
       </list>
     </recent_temporary>
   </component>
@@ -222,22 +218,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605185671524" />
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom" timestamp="1605628347925">
+    <state width="2517" height="230" key="GridCell.Tab.0.bottom" timestamp="1605696165820">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605628347925" />
-    <state width="2517" height="230" key="GridCell.Tab.0.center" timestamp="1605628347925">
+    <state width="2517" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605696165820" />
+    <state width="2517" height="230" key="GridCell.Tab.0.center" timestamp="1605696165820">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605628347925" />
-    <state width="2517" height="230" key="GridCell.Tab.0.left" timestamp="1605628347925">
+    <state width="2517" height="230" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605696165820" />
+    <state width="2517" height="230" key="GridCell.Tab.0.left" timestamp="1605696165820">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605628347925" />
-    <state width="2517" height="230" key="GridCell.Tab.0.right" timestamp="1605628347925">
+    <state width="2517" height="230" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605696165820" />
+    <state width="2517" height="230" key="GridCell.Tab.0.right" timestamp="1605696165820">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605628347925" />
+    <state width="2517" height="230" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605696165820" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1605627763157">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -282,7 +278,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TDA552_Lab1$TransporterTest_LoadUnloadTest.ic" NAME="TransporterTest.LoadUnloadTest Coverage Results" MODIFIED="1605627339058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$MoveTest.ic" NAME="MoveTest Coverage Results" MODIFIED="1605186059650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TDA552_Lab1$TestSuite.ic" NAME="TestSuite Coverage Results" MODIFIED="1605628347888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552_Lab1$TestSuite.ic" NAME="TestSuite Coverage Results" MODIFIED="1605696165777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$TransporterTest_RampTest.ic" NAME="TransporterTest.RampTest Coverage Results" MODIFIED="1605627011603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$TurnTest.ic" NAME="TurnTest Coverage Results" MODIFIED="1605185846541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$Volvo240Test_TestStopEngine.ic" NAME="Volvo240Test.TestStopEngine Coverage Results" MODIFIED="1605273771746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
