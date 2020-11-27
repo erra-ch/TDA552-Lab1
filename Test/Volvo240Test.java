@@ -7,7 +7,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestMoveWhenDirectionIsUp() {
-        AbstractCar volvo240 = new Volvo240();
+        Car volvo240 = new Volvo240();
         volvo240.startEngine();
         volvo240.move();
         Assert.assertEquals(-0.1, volvo240.getY(), -0.1);
@@ -19,7 +19,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestMoveWhenDirectionIsRight() {
-        AbstractCar volvo240 = new Volvo240();
+        Car volvo240 = new Volvo240();
         volvo240.startEngine();
         volvo240.turnRight();
         volvo240.move();
@@ -32,7 +32,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestMoveWhenDirectionIsDown() {
-        AbstractCar volvo240 = new Volvo240();
+        Car volvo240 = new Volvo240();
         volvo240.startEngine();
         volvo240.turnRight();
         volvo240.turnRight();
@@ -46,7 +46,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestMoveWhenDirectionIsLeft() {
-        AbstractCar volvo240 = new Volvo240();
+        Car volvo240 = new Volvo240();
         volvo240.startEngine();
         volvo240.turnLeft();
         volvo240.move();
@@ -59,7 +59,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestRightAndLeftTurn() {
-        AbstractCar car = new Volvo240();
+        Car car = new Volvo240();
         car.turnRight();
         car.turnRight();
         car.turnLeft();
@@ -71,7 +71,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestGasBrake() {
-        AbstractCar car = new Volvo240();
+        Car car = new Volvo240();
         car.gas(0.5);
         car.gas(0.2);
         car.brake(0.3);
@@ -83,7 +83,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestGasBrakeSanity() {
-        AbstractCar car = new Volvo240();
+        Car car = new Volvo240();
         car.gas(2);
         car.gas(-1);
         Assert.assertEquals(1.25, car.getCurrentSpeed(), 1.25 );
@@ -94,7 +94,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestTrimFactor() {
-        AbstractCar car = new Volvo240();
+        Car car = new Volvo240();
         Assert.assertEquals(1.25, ((Volvo240) car).getTrimFactor(), 1.25);
     }
 
@@ -103,7 +103,7 @@ public class Volvo240Test {
      */
     @Test
     public void TestStopEngine() {
-        AbstractCar car = new Volvo240();
+        Car car = new Volvo240();
         car.startEngine();
         car.stopEngine();
         Assert.assertEquals(0, car.getCurrentSpeed(), 0);

@@ -2,27 +2,27 @@
 import java.awt.*;
 
 /**
- * Abstract car class
+ * Abstract vehicle class
  */
-public abstract class AbstractCar implements Movable {
+public abstract class Vehicle implements Movable {
     /**
-     * Number of Doors on the car
+     * Number of Doors on the vehicle
      */
     private int nrDoors;
     /**
-     * Engine power of the car
+     * Engine power of the vehicle
      */
     private double enginePower;
     /**
-     * Current speed of the car
+     * Current speed of the vehicle
      */
     private double currentSpeed;
     /**
-     * Color of the car
+     * Color of the vehicle
      */
     private Color color;
     /**
-     * Model of the car
+     * Model of the vehicle
      */
     private String modelName;
     /**
@@ -34,22 +34,24 @@ public abstract class AbstractCar implements Movable {
      */
     private double y;
     /**
-     * The direction the car is heading
+     * The direction the vehicle is heading
      */
     private int direction;  // 0 = UP
                             // 1 = Right
                             // 2 = Down
                             // 3 = Left
 
+    private boolean isMovable;
+
     /**
-     * Constructor for abstract class of car
+     * Constructor for abstract class of vehicle
      *
-     * @param nrDoors       Number of doors on the car.
+     * @param nrDoors       Number of doors on the vehicle.
      * @param enginePower   The power of the engine.
-     * @param color         Color of the car.
-     * @param modelName     Car model.
+     * @param color         Color of the vehicle.
+     * @param modelName     vehicle model.
      */
-    public AbstractCar(int nrDoors, double enginePower, Color color, String modelName) {
+    public Vehicle(int nrDoors, double enginePower, Color color, String modelName) {
         this.nrDoors = nrDoors;
         this.enginePower = enginePower;
         this.color = color;
@@ -57,11 +59,38 @@ public abstract class AbstractCar implements Movable {
         this.x = 0;
         this.y = 0;
         this.direction = 0;
+        this.isMovable = true;
         stopEngine();
     }
 
     /**
-     * Abstract method to increment the speed of the car
+     * Tells if the vehicle can be moved
+     *
+     * @return boolean
+     */
+    public boolean isMovable() {
+        return isMovable;
+    }
+
+    /**
+     * Sets the state of the vehicles ability to move
+     * @param state boolean
+     */
+    public void setMovableState(boolean state) {
+        isMovable = state;
+    }
+
+    /**
+     *  Tells if the vehicle is moving or not
+     *
+     * @return boolean
+     */
+    public boolean isMoving() {
+        return getCurrentSpeed() != 0;
+    }
+
+    /**
+     * Abstract method to increment the speed of the vehicle
      *
      * @param amount Amount to increase the speed with
      */
@@ -81,7 +110,7 @@ public abstract class AbstractCar implements Movable {
     protected abstract double speedFactor();
 
     /**
-     * Increases the speed of the car
+     * Increases the speed of the vehicle
      *
      * @param amount Amount of speed
      */
@@ -96,7 +125,7 @@ public abstract class AbstractCar implements Movable {
     }
 
     /**
-     * Decreases the speed of the car
+     * Decreases the speed of the vehicle
      *
      * @param amount Amount of speed
      */
@@ -112,7 +141,7 @@ public abstract class AbstractCar implements Movable {
     }
 
     /**
-     * Method to move the car in its direction
+     * Method to move the vehicle in its direction
      */
     @Override
     public void move() {
@@ -135,7 +164,7 @@ public abstract class AbstractCar implements Movable {
     }
 
     /**
-     * Method to turn the car left
+     * Method to turn the vehicle left
      */
     @Override
     public void turnLeft() {
@@ -143,7 +172,7 @@ public abstract class AbstractCar implements Movable {
     }
 
     /**
-     * Method to turn the car right
+     * Method to turn the vehicle right
      */
     @Override
     public void turnRight() {
@@ -151,26 +180,17 @@ public abstract class AbstractCar implements Movable {
     }
 
     /**
-     * Starts the engine of the car
+     * Starts the engine of the vehicle
      */
     public void startEngine() { currentSpeed = 0.1; }
 
     /**
-     * Stops the engine of the car
+     * Stops the engine of the vehicle
      */
     public void stopEngine() {
         currentSpeed = 0;
     }
-    /*
-    /**
-     * Getter for number of doors
-     *
-     * @return Returns number of doors the car has
-     *  /
-    public int getNrDoors() {
-        return nrDoors;
-    }
-    */
+
     /**
      * Getter for enginepower
      *
@@ -182,52 +202,25 @@ public abstract class AbstractCar implements Movable {
 
 
     /**
-     * Getter for current speed of the car
+     * Getter for current speed of the vehicle
      *
-     * @return Returns the current speed of the car
+     * @return Returns the current speed of the vehicle
      */
     public double getCurrentSpeed() {
         return currentSpeed;
     }
 
     /**
-     * Sets current speed of the car
+     * Sets current speed of the vehicle
      *
      * @param currentSpeed The speed to set the current speed to
      */
     public void setCurrentSpeed(double currentSpeed) { this.currentSpeed = currentSpeed; }
-    /*
-    /**
-     * Setter for color
-     *
-     * @return Returns the color of the car
-     *  /
-    public Color getColor() {
-        return color;
-    }
-    */
-    /*
-    /**
-     * Setter for the color of the car
-     *
-     * @param color The color to paint the car with
-     *  /
-    public void setColor(Color color) { this.color = color; }
-    */
-    /*
-    /**
-     * Getter for model of the car
-     *
-     * @return Returns the model name
-     *  /
-    public String getModelName() {
-        return modelName;
-    }
-    */
+
     /**
      * Getter for X-position
      *
-     * @return Returns X-position of the car
+     * @return Returns X-position of the vehicle
      */
     public double getX() {
         return x;
@@ -236,7 +229,7 @@ public abstract class AbstractCar implements Movable {
     /**
      * Setter for X-position
      *
-     * @param x The X-position the car should have
+     * @param x The X-position the vehicle should have
      */
     public void setX(double x) {
         this.x = x;
@@ -245,7 +238,7 @@ public abstract class AbstractCar implements Movable {
     /**
      * Getter for Y-position
      *
-     * @return Returns Y-position of the car
+     * @return Returns Y-position of the vehicle
      */
     public double getY() {
         return y;
@@ -254,23 +247,23 @@ public abstract class AbstractCar implements Movable {
     /**
      * Setter for Y-position
      *
-     * @param y The Y-position the car should have
+     * @param y The Y-position the vehicle should have
      */
     public void setY(double y) {
         this.y = y;
     }
 
     /**
-     * Getter for direction of the car
+     * Getter for direction of the vehicle
      *
-     * @return Returns the direction of the car with int value
+     * @return Returns the direction of the vehicle with int value
      */
     public int getDirection() {
         return direction;
     }
 
     /**
-     * Setter for direction of the car
+     * Setter for direction of the vehicle
      *
      * @param direction Direction int value
      */
