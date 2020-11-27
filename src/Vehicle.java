@@ -112,15 +112,17 @@ public abstract class Vehicle implements Movable {
     /**
      * Increases the speed of the vehicle
      *
-     * @param amount Amount of speed
+     * @param amount Amount of speed, between 0 and 1
      */
     public void gas(double amount) {
-        if (amount > 1) {
-            this.incrementSpeed(1);
-        } else if (amount <= 0) {
-            this.incrementSpeed(0);
-        } else {
-            this.incrementSpeed(amount);
+        if (this.isMovable()) {
+            if (amount > 1) {
+                this.incrementSpeed(1);
+            } else if (amount <= 0) {
+                this.incrementSpeed(0);
+            } else {
+                this.incrementSpeed(amount);
+            }
         }
     }
 
@@ -130,14 +132,15 @@ public abstract class Vehicle implements Movable {
      * @param amount Amount of speed
      */
     public void brake(double amount) {
-        if (amount > 1) {
-            this.decrementSpeed(1);
-        } else if (amount <= 0) {
-            this.decrementSpeed(0);
-        } else {
-            this.decrementSpeed(amount);
+        if (this.isMovable()) {
+            if (amount > 1) {
+                this.decrementSpeed(1);
+            } else if (amount <= 0) {
+                this.decrementSpeed(0);
+            } else {
+                this.decrementSpeed(amount);
+            }
         }
-
     }
 
     /**
