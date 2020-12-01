@@ -1,8 +1,9 @@
+import Lab1.*;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test for Scania class
+ * Test for Lab1.Scania class
  */
 public class ScaniaTest {
 

@@ -1,4 +1,4 @@
-
+package Lab1;
 
 /**
  * Interface for movable objects

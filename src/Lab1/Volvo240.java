@@ -1,8 +1,9 @@
+package Lab1;
 
 import java.awt.*;
 
 /**
- * Car model class for Volvo 240
+ * Lab1.Car model class for Volvo 240
  */
 public class Volvo240 extends Car {
 
@@ -15,7 +16,7 @@ public class Volvo240 extends Car {
      * Constructor
      */
     public Volvo240(){
-        super(4, 100, Color.black, "Volvo240");
+        super(4, 100, Color.black, "Lab1.Volvo240");
     }
 
     /**

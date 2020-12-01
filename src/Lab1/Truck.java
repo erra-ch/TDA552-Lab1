@@ -1,3 +1,5 @@
+package Lab1;
+
 import java.awt.*;
 
 public abstract class Truck extends Vehicle {

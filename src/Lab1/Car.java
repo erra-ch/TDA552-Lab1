@@ -1,7 +1,9 @@
+package Lab1;
+
 import java.awt.*;
 
 /**
- * Car class
+ * Lab1.Car class
  */
 public abstract class Car extends Vehicle {
 
