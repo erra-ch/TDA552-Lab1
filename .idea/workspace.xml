@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8afba137-3cf7-42fa-9410-4df26d93d5db" name="Default Changelist" comment="Task 1: Created AbscractCar class. Changed constructors to super (inheritance). Getters and Setters in AbstractCar&#10;&#10;TODO: Implement increment- and decrementSpeed, gas and brake in AbstractCar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Saab95Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Saab95Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/ScaniaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/ScaniaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TransporterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TransporterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Volvo240Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Volvo240Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/WorkshopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/WorkshopTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarTransportable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/CarTransportable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IFlatbed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/IFlatbed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Movable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ramp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Ramp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RampPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/RampPos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Saab95.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Scania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Transporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Volvo240.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Workshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1/Workshop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,22 +230,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605185671524" />
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom" timestamp="1606834935957">
+    <state width="2517" height="230" key="GridCell.Tab.0.bottom" timestamp="1607528936201">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606834935957" />
-    <state width="2517" height="230" key="GridCell.Tab.0.center" timestamp="1606834935957">
+    <state width="2517" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607528936201" />
+    <state width="2517" height="230" key="GridCell.Tab.0.center" timestamp="1607528936200">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606834935957" />
-    <state width="2517" height="230" key="GridCell.Tab.0.left" timestamp="1606834935956">
+    <state width="2517" height="230" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607528936200" />
+    <state width="2517" height="230" key="GridCell.Tab.0.left" timestamp="1607528936200">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606834935956" />
-    <state width="2517" height="230" key="GridCell.Tab.0.right" timestamp="1606834935957">
+    <state width="2517" height="230" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607528936200" />
+    <state width="2517" height="230" key="GridCell.Tab.0.right" timestamp="1607528936201">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1606834935957" />
+    <state width="2517" height="230" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607528936201" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1606482420033">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
