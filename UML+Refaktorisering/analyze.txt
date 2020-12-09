@@ -1,0 +1,40 @@
+Which dependencies are necessary?
+
+Dependenices mellan CarView och draw panel var nödvändiga i första designen.
+CarView innehåller Både en CarController och en DrawPanel.
+
+Which classes are dependent that should not be?
+
+Alla klasserna i labb2 paketet beror på varandra kors och tvärs.
+Det är onödigt att CarController och CarView är beroende av varnandra.
+
+Are there stronger dependencies than necessary?
+
+Allt är very thightly coupled.
+
+Can you identify any violations of other design principles we talked about in the course?
+
+Open-Closed. I och med att de tre klasserna är väldigt sammankopplade så ä behövs det modifieras för att läggas till saker.
+DIP, vi har inte valt våra dependencies, alla filerna är beroende på varandra där de bör vara beroende av abstractioner.
+SoC, alla klasserna har flera olika ansvarsområden.
+SRP,
+
+What responsibilities do your classes have?
+
+CarController är hela simulatorns logik
+CarView håller alla actionEvents vilket gör den en del av kontrollerna.
+CarView ansvarar även för att visa kontrollerna.
+I CarView skapas en DrawPanel som är fönstret i vilket vi ser bilarna
+I CarView säger vi åt CarController att utföra våra kontroller
+DrawPanel är fönstret som bilarna ses i och kopplar även bilderna till bilarna.
+DrawPanel håller också koll på vart bilarna befinner sig
+CarController tar actionEventsen från CarView
+
+What reasons do they have for change?
+
+De beror mycket på varandra. Controll och view är ligger båda i samma klasser.
+De bryter nästan alla principer så de behöver ändras.
+In which classes would you need to apply decomposition to better follow SoC and SRP?
+CarView och CarController behöver brytas ned för att följa Separation of Concern och Single Responsibility Principle
+Are there any parts of the plan that can be executed in parallel, by different developers working independently?
+Till exempel kan man flytta alla kontrollerna till CarController parallellt med att skapa en CarFactory

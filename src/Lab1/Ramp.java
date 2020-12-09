@@ -1,6 +1,7 @@
+package Lab1;
 
 /**
- * Ramp class
+ * Lab1.Ramp class
  */
 public class Ramp {
 

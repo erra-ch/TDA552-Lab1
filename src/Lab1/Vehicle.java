@@ -1,3 +1,4 @@
+package Lab1;
 
 import java.awt.*;
 
@@ -58,7 +59,7 @@ public abstract class Vehicle implements Movable {
         this.modelName = modelName;
         this.x = 0;
         this.y = 0;
-        this.direction = 0;
+        this.direction = 1;
         this.isMovable = true;
         stopEngine();
     }

@@ -1,10 +1,12 @@
+package Lab1;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * A mechanical workshop for cars
  *
- * @param <T> Has to be subtype of Car-class
+ * @param <T> Has to be subtype of Lab1.Car-class
  */
 public class Workshop< T extends Car > {
 

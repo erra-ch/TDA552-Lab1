@@ -1,0 +1,10 @@
+Refractoring plan
+
+Make CarController the class that holds all the controlls instead of them being shared between CarController and Carview
+Create VehicleFactory.
+Create Logic class, keep everything purely logical in it (not controls), such as IsInside.
+Create the Observer interface
+
+Are there any parts of the plan that can be executed in parallel, by different developers working independently?
+
+Till exempel kan man flytta alla kontrollerna till CarController parallellt med att skapa en CarFactory
