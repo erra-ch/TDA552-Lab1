@@ -1,9 +1,10 @@
-import Lab1.*;
+import lib.Car;
+import lib.Saab95;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test for Lab1.Saab95 class
+ * Test for lib.Saab95 class
  */
 public class Saab95Test {
     /**

@@ -1,4 +1,5 @@
-import Lab1.*;
+import lib.Car;
+import lib.Volvo240;
 import org.junit.Assert;
 import org.junit.Test;
 

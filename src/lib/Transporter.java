@@ -1,4 +1,4 @@
-package Lab1;
+package lib;
 
 import java.awt.*;
 import java.util.ArrayDeque;
@@ -86,7 +86,7 @@ public class Transporter extends Truck implements CarTransportable {
     }
 
     /**
-     * Lab1.Transporter move method
+     * lib.Transporter move method
      */
     @Override
     public void move() {

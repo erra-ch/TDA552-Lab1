@@ -1,8 +1,11 @@
 package Lab2;
-import Lab1.*;
+import lib.Saab95;
+import lib.Scania;
+import lib.Vehicle;
+import lib.Volvo240;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -40,7 +43,7 @@ public class DrawPanel extends JPanel{
         try {
             // You can remove the "pics" part if running outside of IntelliJ and
             // everything is in the same main folder.
-            // volvoImage = ImageIO.read(new File("Lab1.Volvo240.jpg"));
+            // volvoImage = ImageIO.read(new File("lib.Volvo240.jpg"));
 
             // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
             // if you are starting in IntelliJ.

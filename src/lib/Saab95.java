@@ -1,9 +1,9 @@
-package Lab1;
+package lib;
 
 import java.awt.*;
 
 /**
- * Lab1.Car model class for Saab 95
+ * lib.Car model class for Saab 95
  */
 public class Saab95 extends Car {
 
@@ -16,7 +16,7 @@ public class Saab95 extends Car {
      * Constructor
      */
     public Saab95(){
-        super(2, 125, Color.red, "Lab1.Saab95");
+        super(2, 125, Color.red, "lib.Saab95");
         turboOn = false;
     }
 
