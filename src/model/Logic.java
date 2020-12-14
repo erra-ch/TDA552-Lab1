@@ -111,6 +111,7 @@ public class Logic extends JFrame implements Observable {
         for (Vehicle vehicle : vehicles ) {
             if (vehicle.getClass().equals(Scania.class)) {
                 ((Scania) vehicle).raiseFlatbed(70);
+                System.out.println("Raised flatbed");
             }
         }
     }
@@ -119,6 +120,7 @@ public class Logic extends JFrame implements Observable {
         for (Vehicle vehicle : vehicles ) {
             if (vehicle.getClass().equals(Scania.class)) {
                 ((Scania) vehicle).lowerFlatbed(70);
+                System.out.println("Lowered flatbed");
             }
         }
     }

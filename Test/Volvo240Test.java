@@ -10,6 +10,7 @@ public class Volvo240Test {
     @Test
     public void TestMoveWhenDirectionIsUp() {
         Car volvo240 = new Volvo240();
+        volvo240.turnLeft();
         volvo240.startEngine();
         volvo240.move();
         Assert.assertEquals(-0.1, volvo240.getY(), -0.1);
@@ -23,7 +24,6 @@ public class Volvo240Test {
     public void TestMoveWhenDirectionIsRight() {
         Car volvo240 = new Volvo240();
         volvo240.startEngine();
-        volvo240.turnRight();
         volvo240.move();
         Assert.assertEquals(0, volvo240.getY(), 0);
         Assert.assertEquals(0.1, volvo240.getX(), 0.1);
@@ -35,9 +35,8 @@ public class Volvo240Test {
     @Test
     public void TestMoveWhenDirectionIsDown() {
         Car volvo240 = new Volvo240();
+        volvo240.turnRight();
         volvo240.startEngine();
-        volvo240.turnRight();
-        volvo240.turnRight();
         volvo240.move();
         Assert.assertEquals(0.1, volvo240.getY(), 0.1);
         Assert.assertEquals(0, volvo240.getX(), 0);
@@ -49,8 +48,9 @@ public class Volvo240Test {
     @Test
     public void TestMoveWhenDirectionIsLeft() {
         Car volvo240 = new Volvo240();
+        volvo240.turnRight();
+        volvo240.turnRight();
         volvo240.startEngine();
-        volvo240.turnLeft();
         volvo240.move();
         Assert.assertEquals(0, volvo240.getY(), 0);
         Assert.assertEquals(-0.1, volvo240.getX(), -0.1);
@@ -65,7 +65,7 @@ public class Volvo240Test {
         car.turnRight();
         car.turnRight();
         car.turnLeft();
-        Assert.assertSame(1, car.getDirection());
+        Assert.assertSame(2, car.getDirection());
     }
 
     /**

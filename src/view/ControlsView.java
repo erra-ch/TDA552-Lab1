@@ -25,10 +25,10 @@ public class ControlsView extends JPanel {
 
     private JButton gasButton = new JButton("Gas");
     private JButton brakeButton = new JButton("Brake");
-    private JButton turboOnButton = new JButton("Saab Turbo on");
-    private JButton turboOffButton = new JButton("Saab Turbo off");
-    private JButton liftBedButton = new JButton("Scania Lift Bed");
-    private JButton lowerBedButton = new JButton("Lower Lift Bed");
+    private JButton turboOnButton = new JButton("Turbo on");
+    private JButton turboOffButton = new JButton("Turbo off");
+    private JButton raiseBedButton = new JButton("Raise Bed");
+    private JButton lowerBedButton = new JButton("Lower Bed");
 
     private JButton startButton = new JButton("Start all cars");
     private JButton stopButton = new JButton("Stop all cars");
@@ -44,7 +44,7 @@ public class ControlsView extends JPanel {
     private void initComponents() {
 
         SpinnerModel spinnerModel =
-                new SpinnerNumberModel(0, //initial value
+                new SpinnerNumberModel(49, //initial value
                         0, //min
                         100, //max
                         1);//step
@@ -65,7 +65,7 @@ public class ControlsView extends JPanel {
 
         controlPanel.add(gasButton, 0);
         controlPanel.add(turboOnButton, 1);
-        controlPanel.add(liftBedButton, 2);
+        controlPanel.add(raiseBedButton, 2);
         controlPanel.add(brakeButton, 3);
         controlPanel.add(turboOffButton, 4);
         controlPanel.add(lowerBedButton, 5);
@@ -113,7 +113,7 @@ public class ControlsView extends JPanel {
             }
         });
 
-        liftBedButton.addActionListener(new ActionListener() {
+        raiseBedButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 controller.raiseBed();

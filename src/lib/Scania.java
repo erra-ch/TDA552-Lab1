@@ -12,10 +12,10 @@ public class Scania extends Truck implements IFlatbed {
      * Constructor for abstract class lib.Vehicle
      *
      */
-    public Scania(){ super (2, 300, Color.white, "Scania114G"); }
+    public Scania(){ super (2, 300, Color.white, "Scania"); }
 
     /**
-     * Move method for lib.Scania trucks with flatbed
+     * Move method for Scania trucks with flatbed
      */
     @Override
     public void move() {

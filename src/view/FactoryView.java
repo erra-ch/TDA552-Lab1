@@ -23,10 +23,10 @@ public class FactoryView extends JPanel {
         this.controller = controller;
         this.x = x;
         this.y = y;
-        initComponent();
+        initComponents();
     }
 
-    public void initComponent() {
+    public void initComponents() {
 
         this.setLayout(new GridLayout(2,2));
         this.add(newSaabButton, 0);

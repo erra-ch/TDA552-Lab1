@@ -2,41 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8afba137-3cf7-42fa-9410-4df26d93d5db" name="Default Changelist" comment="Task 1: Created AbscractCar class. Changed constructors to super (inheritance). Getters and Setters in AbstractCar&#10;&#10;TODO: Implement increment- and decrementSpeed, gas and brake in AbstractCar">
-      <change afterPath="$PROJECT_DIR$/src/controller/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Logic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Observable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/VehicleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/app.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ControlsView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/FactoryView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/GameView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MainView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/InfoView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Saab95Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Saab95Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/ScaniaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/ScaniaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TransporterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TransporterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Volvo240Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Volvo240Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/WorkshopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/WorkshopTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/CarTransportable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CarTransportable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/IFlatbed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/IFlatbed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Movable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Ramp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Ramp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/RampPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/RampPos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Saab95.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Scania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Transporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Transporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Volvo240.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1/Workshop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Workshop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab2/CarController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab2/CarView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab2/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/DrawPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab2/pics/Saab95.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pics/Saab95.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab2/pics/Scania.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pics/Scania.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab2/pics/Volvo240.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pics/Volvo240.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/DrawPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Saab95.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Saab95.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Scania.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Volvo240.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Volvo240.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/app.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ControlsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ControlsView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/FactoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FactoryView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="607" />
+    <option name="myElementSize" value="627" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +81,7 @@
       <recent name="C:\Users\Erik\Documents\java-devel\OOPoD-TDA552\Lab 1\TDA552-Lab1\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuite">
+  <component name="RunManager" selected="Application.app">
     <configuration name="CarController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.CarController" />
       <module name="TDA552-Lab1" />
@@ -136,12 +117,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkshopTest.WorkshopAddRemoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransporterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDA552-Lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WorkshopTest" />
-      <option name="METHOD_NAME" value="WorkshopAddRemoveTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="TransporterTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSuite" />
         <item itemvalue="Application.app" />
+        <item itemvalue="JUnit.TestSuite" />
+        <item itemvalue="JUnit.TransporterTest" />
         <item itemvalue="Application.CarController" />
         <item itemvalue="JUnit.WorkshopTest.WorkshopTypeTest" />
-        <item itemvalue="JUnit.WorkshopTest.WorkshopAddRemoveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -279,22 +259,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1605185671524" />
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom" timestamp="1607683912860">
+    <state width="2517" height="158" key="GridCell.Tab.0.bottom" timestamp="1607973953162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607683912860" />
-    <state width="2517" height="230" key="GridCell.Tab.0.center" timestamp="1607683912860">
+    <state width="2517" height="158" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607973953162" />
+    <state width="2517" height="158" key="GridCell.Tab.0.center" timestamp="1607973953161">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607683912860" />
-    <state width="2517" height="230" key="GridCell.Tab.0.left" timestamp="1607683912859">
+    <state width="2517" height="158" key="GridCell.Tab.0.center/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607973953161" />
+    <state width="2517" height="158" key="GridCell.Tab.0.left" timestamp="1607973953161">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607683912859" />
-    <state width="2517" height="230" key="GridCell.Tab.0.right" timestamp="1607683912860">
+    <state width="2517" height="158" key="GridCell.Tab.0.left/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607973953161" />
+    <state width="2517" height="158" key="GridCell.Tab.0.right" timestamp="1607973953161">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="230" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607683912860" />
+    <state width="2517" height="158" key="GridCell.Tab.0.right/0.0.2560.1400/2560.360.1920.1040/-1920.360.1920.1040@0.0.2560.1400" timestamp="1607973953161" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1606482420033">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -343,7 +323,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TDA552_Lab1$TransporterTest_LoadUnloadTest.ic" NAME="TransporterTest.LoadUnloadTest Coverage Results" MODIFIED="1605627339058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$MoveTest.ic" NAME="MoveTest Coverage Results" MODIFIED="1605186059650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/TDA552_Lab1$TestSuite.ic" NAME="TestSuite Coverage Results" MODIFIED="1607683874216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TDA552_Lab1$TestSuite.ic" NAME="TestSuite Coverage Results" MODIFIED="1607961754994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$TransporterTest_RampTest.ic" NAME="TransporterTest.RampTest Coverage Results" MODIFIED="1605627011603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$TurnTest.ic" NAME="TurnTest Coverage Results" MODIFIED="1605185846541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/TDA552_Lab1$Volvo240Test_TestStopEngine.ic" NAME="Volvo240Test.TestStopEngine Coverage Results" MODIFIED="1605273771746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

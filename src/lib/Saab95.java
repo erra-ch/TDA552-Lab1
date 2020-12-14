@@ -3,7 +3,7 @@ package lib;
 import java.awt.*;
 
 /**
- * lib.Car model class for Saab 95
+ * Car model class for Saab 95
  */
 public class Saab95 extends Car {
 
@@ -16,7 +16,7 @@ public class Saab95 extends Car {
      * Constructor
      */
     public Saab95(){
-        super(2, 125, Color.red, "lib.Saab95");
+        super(2, 125, Color.red, "Saab95");
         turboOn = false;
     }
 

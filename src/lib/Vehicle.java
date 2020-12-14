@@ -274,4 +274,11 @@ public abstract class Vehicle implements Movable {
     public void setDirection(int direction) {
         this.direction = direction;
     }
+
+    /**
+     * Getter for model of the vehicle
+     *
+     * @return The model.
+     */
+    public String getModelName() { return modelName; }
 }

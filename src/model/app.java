@@ -18,12 +18,16 @@ public class app {
         MainView mainView = new MainView("Test", X, Y);
         GameView gameView = new GameView(X, Y - 240);
         ControlsView controlsView = new ControlsView(X, Y, controller);
+        InfoView infoView = new InfoView(200, 800 - 240);
         FactoryView factoryView = new FactoryView(800, 800, controller);
 
         //adds views to main window
         mainView.add(controlsView);
         mainView.add(factoryView);
         mainView.add(gameView);
+        mainView.add(infoView);
+
+        game.addObserver(infoView);
         game.addObserver(gameView);
 
 
