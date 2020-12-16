@@ -1,9 +1,9 @@
-import Lab1.*;
+import lib.Scania;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test for Lab1.Scania class
+ * Test for lib.Scania class
  */
 public class ScaniaTest {
 
@@ -24,6 +24,7 @@ public class ScaniaTest {
     @Test
     public void TestMoveWhenDirectionIsUp() {
         Scania scania = new Scania();
+        scania.turnLeft();
         scania.startEngine();
         scania.move();
         Assert.assertEquals(-0.1, scania.getY(), -0.1);
@@ -37,7 +38,6 @@ public class ScaniaTest {
     public void TestMoveWhenDirectionIsRight() {
         Scania scania = new Scania();
         scania.startEngine();
-        scania.turnRight();
         scania.move();
         Assert.assertEquals(0, scania.getY(), 0);
         Assert.assertEquals(0.1, scania.getX(), 0.1);
@@ -49,9 +49,8 @@ public class ScaniaTest {
     @Test
     public void TestMoveWhenDirectionIsDown() {
         Scania scania = new Scania();
+        scania.turnRight();
         scania.startEngine();
-        scania.turnRight();
-        scania.turnRight();
         scania.move();
         Assert.assertEquals(0.1, scania.getY(), 0.1);
         Assert.assertEquals(0, scania.getX(), 0);
@@ -63,8 +62,9 @@ public class ScaniaTest {
     @Test
     public void TestMoveWhenDirectionIsLeft() {
         Scania scania = new Scania();
+        scania.turnRight();
+        scania.turnRight();
         scania.startEngine();
-        scania.turnLeft();
         scania.move();
         Assert.assertEquals(0, scania.getY(), 0);
         Assert.assertEquals(-0.1, scania.getX(), -0.1);
@@ -79,7 +79,7 @@ public class ScaniaTest {
         Scania.turnRight();
         Scania.turnRight();
         Scania.turnLeft();
-        Assert.assertSame(1, Scania.getDirection());
+        Assert.assertSame(2, Scania.getDirection());
     }
 
     /**

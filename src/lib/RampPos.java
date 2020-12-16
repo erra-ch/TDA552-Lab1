@@ -1,4 +1,4 @@
-package Lab1;
+package lib;
 
 public enum RampPos {
     UP,

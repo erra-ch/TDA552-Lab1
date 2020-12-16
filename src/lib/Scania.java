@@ -1,4 +1,4 @@
-package Lab1;
+package lib;
 
 import java.awt.*;
 
@@ -9,13 +9,13 @@ public class Scania extends Truck implements IFlatbed {
     private int flatbedDegree;
 
     /**
-     * Constructor for abstract class Lab1.Vehicle
+     * Constructor for abstract class lib.Vehicle
      *
      */
-    public Scania(){ super (2, 300, Color.white, "Scania114G"); }
+    public Scania(){ super (2, 300, Color.white, "Scania"); }
 
     /**
-     * Move method for Lab1.Scania trucks with flatbed
+     * Move method for Scania trucks with flatbed
      */
     @Override
     public void move() {

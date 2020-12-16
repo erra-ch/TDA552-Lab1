@@ -1,4 +1,4 @@
-package Lab1;
+package lib;
 
 public interface IFlatbed {
 

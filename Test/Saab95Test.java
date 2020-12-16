@@ -1,9 +1,10 @@
-import Lab1.*;
+import lib.Car;
+import lib.Saab95;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test for Lab1.Saab95 class
+ * Test for lib.Saab95 class
  */
 public class Saab95Test {
     /**
@@ -12,6 +13,7 @@ public class Saab95Test {
     @Test
     public void TestMoveWhenDirectionIsUp() {
         Car saab95 = new Saab95();
+        saab95.turnLeft();
         saab95.startEngine();
         saab95.move();
         Assert.assertEquals(-0.1, saab95.getY(), -0.1);
@@ -25,7 +27,6 @@ public class Saab95Test {
     public void TestMoveWhenDirectionIsRight() {
         Car saab95 = new Saab95();
         saab95.startEngine();
-        saab95.turnRight();
         saab95.move();
         Assert.assertEquals(0, saab95.getY(), 0);
         Assert.assertEquals(0.1, saab95.getX(), 0.1);
@@ -37,9 +38,8 @@ public class Saab95Test {
     @Test
     public void TestMoveWhenDirectionIsDown() {
         Car saab95 = new Saab95();
+        saab95.turnRight();
         saab95.startEngine();
-        saab95.turnRight();
-        saab95.turnRight();
         saab95.move();
         Assert.assertEquals(0.1, saab95.getY(), 0.1);
         Assert.assertEquals(0, saab95.getX(), 0);
@@ -51,8 +51,9 @@ public class Saab95Test {
     @Test
     public void TestMoveWhenDirectionIsLeft() {
         Car saab95 = new Saab95();
+        saab95.turnRight();
+        saab95.turnRight();
         saab95.startEngine();
-        saab95.turnLeft();
         saab95.move();
         Assert.assertEquals(0, saab95.getY(), 0);
         Assert.assertEquals(-0.1, saab95.getX(), -0.1);
@@ -67,7 +68,7 @@ public class Saab95Test {
         car.turnRight();
         car.turnRight();
         car.turnLeft();
-        Assert.assertSame(1, car.getDirection());
+        Assert.assertSame(2, car.getDirection());
     }
 
     /**

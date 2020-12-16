@@ -1,4 +1,7 @@
-import Lab1.*;
+import lib.Car;
+import lib.Saab95;
+import lib.Transporter;
+import lib.Volvo240;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -36,6 +39,8 @@ public class TransporterTest {
     public void MoveTest() {
         Transporter truck = new Transporter(500, Color.green, "BigBoy");
         Car car = new Volvo240();
+        car.setY(0);
+        car.setX(0);
         truck.rampDown();
         truck.loadCar(car);
 
@@ -45,7 +50,7 @@ public class TransporterTest {
         truck.gas(1);
         truck.move();   // Moves because ramp is up;
 
-        Assert.assertFalse(truck.getY() == 0 && car.getY() == 0);
+        Assert.assertFalse(truck.getX() == 0 && car.getX() == 0);
 
     }
 
